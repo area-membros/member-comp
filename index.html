@@ -1,0 +1,126 @@
+<!--
+Arquivo: index.html
+Local: / (raiz do projeto)
+Descrição: Página principal da área de membros (lista de produtos)
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tribo de Cristo</title>
+
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <meta name="theme-color" content="#000000" />
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="logo">
+      📖 <span>Tribo de Cristo</span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <h1>Bem-vindo à Tribo de Cristo</h1>
+    <p class="subtitle">
+      Aqui começa a sua jornada de fé, o lugar onde você encontra as pedras
+      que precisa para enfrentar e vencer os gigantes que tentam te parar.
+    </p>
+
+    <section class="cards">
+
+      <!-- CARD 01 -->
+      <div class="card">
+        <img src="/images/01.png" alt="Os Segredos de Davi" />
+
+        <div class="card-content">
+          <h2>Os Segredos de Davi Para Derrotar os Seus Gigantes</h2>
+          <p>
+            Descubra os princípios e atitudes que fizeram Davi vencer gigantes
+            antes mesmo de subir ao trono.
+          </p>
+
+          <div class="card-actions">
+            <a href="/pdfs/os-segredos-de-davi.pdf" target="_blank" class="btn btn-open">
+              Abrir
+            </a>
+
+            <a href="/pdfs/os-segredos-de-davi.pdf" download class="btn btn-download">
+              Download
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 02 -->
+      <div class="card">
+        <img src="/images/02.png" alt="Davi e Golias" />
+
+        <div class="card-content">
+          <h2>Davi e Golias – A Batalha Histórica</h2>
+          <p>
+            Uma reconstrução detalhada e visual da batalha que mudou a história
+            de Israel.
+          </p>
+
+          <div class="card-actions">
+            <a href="/pdfs/davi_e_golias.pdf" target="_blank" class="btn btn-open">
+              Abrir
+            </a>
+
+            <a href="/pdfs/davi_e_golias.pdf" download class="btn btn-download">
+              Download
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <p class="footer-feedback">
+      Qualquer dúvida entre em contato conosco -
+      <a href="https://support-26.netlify.app/en">Support/Feedback</a>
+    </p>
+
+  </main>
+<!--
+POPUP DE INSTALAÇÃO (PWA)
+Ele aparece sempre que abrir, enquanto o app não estiver instalado
+-->
+<div id="installModal" class="install-modal" aria-hidden="true">
+  <div class="install-box">
+    <button id="installClose" class="install-close" aria-label="Fechar">×</button>
+
+    <div class="install-title">Instale o aplicativo</div>
+    <div class="install-text">
+      Instale para acessar mais rápido e usar mesmo sem internet.
+    </div>
+
+    <button id="installBtn" class="install-btn">
+      Instalar agora
+    </button>
+
+    <!-- Mensagem para iPhone/iOS (Safari) -->
+    <div id="iosHint" class="install-ios-hint" hidden>
+      No iPhone: toque em <b>Compartilhar</b> e depois em <b>Adicionar à Tela de Início</b>.
+    </div>
+  </div>
+</div>
+
+  
+  <script src="/js/app.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+

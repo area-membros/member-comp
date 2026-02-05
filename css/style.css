@@ -1,0 +1,206 @@
+/*
+Arquivo: style.css
+Local: /css/style.css
+Descrição: Estilo visual da área de membros (mobile-first)
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, Arial, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+.topbar {
+  padding: 16px;
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: #0f0f0f;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-content h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 16px;
+}
+
+.card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  text-align: center;
+  padding: 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn-open {
+  background: #ff7a00;
+  color: #000;
+}
+
+.btn-download {
+  background: transparent;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.footer-feedback {
+  margin-top: 28px;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.35);
+  text-align: center;
+  line-height: 1.4;
+}
+
+.footer-feedback a {
+  color: rgba(255, 255, 255, 0.45);
+  text-decoration: underline;
+}
+
+.footer-feedback a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+/* ===== POPUP INSTALAR APP (LARANJA) ===== */
+.install-modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 14px;
+  z-index: 9999;
+  display: none;
+  padding: 0 14px;
+}
+
+.install-modal.is-open {
+  display: block;
+}
+
+.install-box {
+  background: #ff7a00;
+  color: #111;
+  border-radius: 14px;
+  padding: 14px 14px 12px;
+  box-shadow: 0 14px 40px rgba(0,0,0,0.55);
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.install-close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.35);
+  color: #111;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.install-title {
+  font-weight: 800;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.install-text {
+  font-size: 13px;
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+
+.install-btn {
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-weight: 900;
+  cursor: pointer;
+  background: #111;
+  color: #fff;
+}
+
+.install-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.install-ios-hint {
+  margin-top: 10px;
+  font-size: 12px;
+  background: rgba(255,255,255,0.35);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+
